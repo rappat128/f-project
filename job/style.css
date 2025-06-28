@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 1px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 130px;
+}
+
+.h5top {
+    margin-top: 5px;
+    color: aliceblue;
+    font-size: 19px;
+}
+.contact-top {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    color:white;
+    margin-top: 45px;
+    font-size: 17px;
+}
+
+.contact-top a {
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+}
+
+.contact-top p {
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(206, 205, 205)
+}
+/* -----------------------line----------------------------- */
+
+                        /* navlow */
+
+.navlow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10px 20px;
+  gap: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+  top: 0%;
+  position: relative;
+  position: sticky;
+  z-index: 1199px;
+  
+}
+
+.navlow a {          
+  font-size: 120%;
+  color: #98282c;
+}
+.navlow ,.right,.left :hover {         /* ใช้ในการเปลียนสีเมือเมาโดน #*/
+  color: #000;
+}
+.background a:hover {
+  background-color:#5a181a;
+  transition: color 0.6s ease;
+}
+.burger {
+  cursor: pointer;
+  display: none;
+  left: 0%;
+  justify-content: start;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+/* list comstom */
+.listleft {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.listright {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.background a {
+  color: aliceblue;
+  background-color:#98282c;
+  padding: 7px 12px;
+  border-radius: 7px;
+}
+
+.dropdown-manu {
+  position: absolute;
+  left: 0%;
+  width: 300px;
+  background-color: whitesmoke;
+  overflow: hidden;
+  height: 0;
+  transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: none;
+}
+.dropdown-manu.open {
+  height: 400px;
+  display: block;
+}
+.dropdown-manu li {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+/* resposive  desige*/
+@media (max-width: 850px) {
+  .listleft ,.listright ,
+  .contact-top a{
+    display: none;
+  }
+  .navlow {
+    justify-content: start;
+    gap: 350px;
+  }
+  .burger {
+    display: block;
+    
+  }
+
+}
+
+
+/* --------------------------------------------------- */
+                         /* main */
+a {
+  text-decoration: none;
+
+}
+main {
+  background: url('img/home.webp') no-repeat center center;
+  background-size: cover;
+  height: 1200px;
+  display:flex;
+  justify-items: start;
+  align-items: center;
+}
+.content-text {
+  margin-left: 20px;
+  font-family: 'Kanit', sans-serif;
+  font-style: italic;
+  margin-left: 400px;
+  color: gold;
+}
+
+/* .content-text p:hover {
+  background-color: #441113;
+} */
+
+.content-text p {
+  border-radius: 60px;
+  padding: 10px;
+  max-width: 300px;
+  text-decoration: none;
+  background-color: #98282c;
+}
+
+.content-text p:hover {
+  background-color: #5a181a;
+  transition: color 0.4s ease;
+}
+
+.underimg a {
+  background-color: white;
+  padding: 7px;
+  /* กำหนดความโค้งของเส้นขอบ */
+  border-radius: 50px;
+  /* กำหนดสีเส้นขอบ */
+  border-color: #98282c;
+  /* กำหนดลักษณเส้นขอบ */
+  border-style: solid;
+  border-width: 3px;
+  margin-top: 55px;
+  color: #98282c;
+}
+
+.underimg a:hover {
+  background-color: #98282c;
+  color: aliceblue;
+  transition: color 0.4s ease;
+}
+.underimg {
+  /* ทำให้ทุกตัวที่อยู่ในเเทรกนี้ เรียงกัน */
+  display: flex;            
+}
+.box1 {
+  flex-direction: column;   /* เรียงแนวตั้ง: img อยู่บน, text อยู่ล่าง */
+  align-items: center;      /* จัดกลางแนวนอน */
+  justify-content: center;  /* จัดกลางแนวตั้ง */
+  text-align: center;       /* ทำให้ตัวอักษรอยู่ตรงกลาง */
+  flex-grow: 1;
+  padding: 30px;
+}
+
+
+.gep-element::after {
+  content: "";
+  display: block;
+  height: 20px;
+  background-color: lightgray;
+}
+
+.rowimg {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* ------------------------------------------------------- */
+                          /* grid-img */
+.imghover {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  align-items: stretch;
+  padding: 10px;
+}
+
+.imghover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imghover > div {
+  max-width: 400px; /* จำกัดความกว้างไม่ให้เกิน */
+  text-align: center;
+}
+.equal-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  flex-grow: 2;
+}
+.imghover-box {
+  position: relative; /* ใช้ในกาารบอกตำเเหนง หรือจุดอ้างอิ่ง */
+  overflow: hidden;
+}
+.text-img {
+  position: absolute; /* ทำให้ object เป็นอิสระ */
+  bottom:  0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ---------------------------------------------------- */
+  /* shortext */
+
+.short-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+.treeimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.short-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 110%;
+  height: 200px;
+}
+
+.text-in {
+  position: absolute; /* ทำให้ object เป็นอิสระ */
+  bottom:  0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* ดำโปร่งใส 50% */
+}
