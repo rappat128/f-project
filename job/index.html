@@ -18,9 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <body>
-    <div class=".overlay">
-
-    </div>
+    <header>
         <!-- navber -->
         <nav class="top">
             <div class="h5top">
@@ -44,11 +42,11 @@
             <div class="listleft">
                 <ul class="left">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">PRODUCTS</a>  <i class="fa-solid fa-caret-down" style="color: #5308dd;"></i></li>
+                    <li><a href="#">PRODUCTS</a>  <i class="fa-solid fa-caret-down" style="color: #98282c;"></i></li>
                     <li><a href="#">REWOER</a></li>
                     <li><a href="#">CATCALOK</a></li>
                     <li><a href="#">ARCTCLE</a></li>
-                    <li><a href="#">CONTACT</a> <i class="fa-solid fa-caret-down" style="color: #5308dd;"></i></li>
+                    <li><a href="#">CONTACT</a> <i class="fa-solid fa-caret-down" style="color: #98282c;"></i></li>
                     <li><a href="#">SUPPORT</a></li>
                 </ul>
             </div>
@@ -71,12 +69,10 @@
                 <li><a href="#">ค้นหาความเหมาะสมที่ตรงกับคุณ</a></li>
             </div>
         </nav>
-
-        
-
-
+    </header>
+    <main>
         <!--------- เนื้อหา --------->
-        <main>
+        <div class="main">
             <div class="content-text"> 
                 <h1><Strong style="font-size: 150%;">smart Security System</Strong></h1> 
                 <h3 style="margin-bottom: 25px;">ความปลอดภัยที่ออกแบบได้ตามใจคุณ</h3>
@@ -88,7 +84,7 @@
                     </p>
                 </a>
             </div>
-        </main>
+        </div>
         <div class="underimg">
             <div class="box1">
                 <div class="img1">
@@ -157,31 +153,39 @@
         <!-- เห้ออออออ -->
         <div class="imghover">
             <div class="imghover-box">
-                <img class="equal-img" src="https://cms.kapook.com/uploads/tag/21/ID_20673_6397e58982aca.jpg" alt="ระบบกันขโมย">
+                <div class="box-img">
+                    <img class="equal-img" src="https://cms.kapook.com/uploads/tag/21/ID_20673_6397e58982aca.jpg" alt="ระบบกันขโมย">
+                </div>
                 <div class="text-img">
                     <h3><strong>ระบบกันขโมย</strong></h3>
                     <p><span>Burglar Alarm</span></p>
                 </div>
             </div>
+
             <div class="imghover-box">
-                <img class="equal-img" src="https://blog.ghbank.co.th/wp-content/uploads/2021/11/A16-6.jpeg" alt="ระบบสมาร์ทโฮม">
-                
+                <div class="box-img">
+                    <img class="equal-img" src="https://plus.unsplash.com/premium_photo-1663075986759-7174dddd865f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8U21hcnQlMjBIb21lfGVufDB8fDB8fHww" alt="ระบบสมาร์ทโฮม">
+                </div>
                 <div class="text-img">
                     <h3><strong>ระบบสมาร์ทโฮม</strong></h3>
                     <p><span>Smart Home</span></p>
                 </div>
             </div>
+
             <div class="imghover-box">
-                <img class="equal-img" src="https://lockhome.co.th/wp-content/uploads/2022/08/TOP-Digital-Door-Lock-MORTISE-Lockhom.jpg.webp" alt="กลอนประตูอัจฉริยะ">
-                
+                <div class="box-img">
+                    <img class="equal-img" src="https://lockhome.co.th/wp-content/uploads/2022/08/TOP-Digital-Door-Lock-MORTISE-Lockhom.jpg.webp" alt="กลอนประตูอัจฉริยะ">
+                </div>
                 <div class="text-img">
                     <h3><strong>กลอนประตูอัจฉริยะ</strong></h3>
                     <p><span>Digital Doorlock</span></p>
                 </div>
             </div>
+
             <div class="imghover-box">
-                <img class="equal-img" src="/job/img/pexels-introspectivedsgn-4592239.jpg" alt="ระบบกล้อง AI">
-                
+                <div class="box-img">
+                    <img class="equal-img" src="/job/img/pexels-introspectivedsgn-4592239.jpg" alt="ระบบกล้อง AI">
+                </div>                
                 <div class="text-img">
                     <h3><strong>ระบบกล้อง AI</strong></h3>
                     <p><span>กล้องวงจรปิด</span></p>
@@ -228,16 +232,11 @@
                     </p>
                 </div>
             </div>
-        </div>
-                
-            
-            </div>
-        </div>
-
-
-
-
-        <script src="js.js"> </script>
+        </div>     
+    </main>    
+        
+    <!------------------------------------ js--------------------------------->
+    <script src="js.js"> </script>
         
         <!-- <script>
             const Burger = document.querySelector('.burger')
