@@ -15,6 +15,15 @@ document.addEventListener('click',function (e) {
         }
     
 });
-    
-
 // ____________________________________________________
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+
+   window.addEventListener("scroll", handleScroll);
+
+    function handleScroll() {
+        const isScrolled = window.scrollY > 210;
+        navbar.classList.toggle("show", isScrolled);
+    }
+});
