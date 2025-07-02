@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
    window.addEventListener("scroll", handleScroll);
 
     function handleScroll() {
-        const isScrolled = window.scrollY > 210;
+        const isScrolled = window.scrollY > 310;
         navbar.classList.toggle("show", isScrolled);
     }
 });

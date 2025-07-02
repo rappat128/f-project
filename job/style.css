@@ -35,15 +35,21 @@
     width: 100%;
     gap: 20px;
     color:white;
-    margin-top: 45px;
+    margin-top: 35px;
     font-size: 17px;
+    margin-bottom: 15px;
 }
+
+
 
 .contact-top a {
   text-decoration: none;
   color:white;
-  font-size: 20px;
+  font-size: 140%;
+  margin-left: 20px;
+  align-items: center;
 }
+
 
 .contact-top p {
   font-size: 20px;
@@ -66,18 +72,20 @@ a:hover {
   gap: 50px;
   font-family: 'Kanit', sans-serif;
   font-style: italic;
-  top: 0%;
+  top: 0px;
   position: sticky;
-  transition: top 0.3s ease-in-out; 
-  position: relative;
+  transition: all 0.4s ease;; 
+  /* position: relative; */
   z-index: 1000;
+  box-shadow: none;
+  width: 100%;
 }
 
 .navlow.show {
-  top: 0;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position:relative;
 }
-
 
 .navlow a {          
   font-size: 120%;
@@ -174,12 +182,10 @@ a:hover {
 
 }
 
-
 /* --------------------------------------------------- */
                          /* main */
 a {
   text-decoration: none;
-
 }
 .main {
   background: url('img/3d.png') no-repeat center center;
